@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://brotn4obd3jjt"]
+
+[ext_resource type="Texture2D" uid="uid://cp6ttf1qkpylt" path="res://assets/sprites/ui/PopUpPlay.png" id="1_e5o6n"]
+[ext_resource type="Script" uid="uid://csw8bfqw3xibq" path="res://scenes/ui/play_popup.gd" id="1_v53if"]
+
+[node name="PlayPopUp" type="Control" unique_id=486507811]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v53if")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1646777677]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5019608)
+
+[node name="Frame" type="TextureRect" parent="." unique_id=1532521071]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -411.0
+offset_top = -151.5
+offset_right = 411.0
+offset_bottom = 151.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_e5o6n")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Frame" unique_id=951235647]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.24700001
+anchor_top = 0.081
+anchor_right = 0.763
+anchor_bottom = 0.89900005
+offset_left = -0.03401184
+offset_top = -0.042999268
+offset_right = -0.18603516
+offset_bottom = 0.102996826
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NewGameButton" type="TextureButton" parent="Frame/VBoxContainer" unique_id=945735284]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ContinueButton" type="TextureButton" parent="Frame/VBoxContainer" unique_id=1395301953]
+layout_mode = 2

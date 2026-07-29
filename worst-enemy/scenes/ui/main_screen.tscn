@@ -2,6 +2,44 @@
 
 [ext_resource type="Script" uid="uid://cdcih8otmj7pf" path="res://scripts/main_screen.gd" id="1_1ws2m"]
 [ext_resource type="Texture2D" uid="uid://cbi3hpnfio8se" path="res://assets/backgrounds/MainScreen.png" id="1_pc1m0"]
+[ext_resource type="Texture2D" uid="uid://cho0s1sikrx2e" path="res://assets/sprites/ui/button.png" id="3_wxjlq"]
+[ext_resource type="PackedScene" uid="uid://brotn4obd3jjt" path="res://scenes/ui/play_pop_up.tscn" id="4_lgxmk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bs46r"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(349.97333, 10.958826, 312.01874, 72.06083)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ic3oy"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(350.01462, 10.937605, 311.99057, 72.05045)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amlif"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(8.956986, 6.9654827, 311.0538, 74.04315)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxjlq"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(350.9369, 93.01655, 310.08496, 70.00416)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgxmk"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(350.937, 93.017, 310.085, 70.004)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25c13"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(8.944266, 88.967896, 310.0616, 74.05682)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odiyu"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(350.0882, 170.96326, 310.86536, 73.05536)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_51vel"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(350.088, 170.963, 310.865, 73.055)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s4t25"]
+atlas = ExtResource("3_wxjlq")
+region = Rect2(8.891163, 170.82285, 311.05313, 74.09372)
 
 [node name="MainScreen" type="Control" unique_id=769747405]
 layout_mode = 3
@@ -37,20 +75,30 @@ grow_horizontal = 2
 grow_vertical = 0
 metadata/_edit_use_anchors_ = true
 
-[node name="PlayButton" type="Button" parent="VBoxContainer" unique_id=1381364037]
+[node name="PlayButton" type="TextureButton" parent="VBoxContainer" unique_id=497995654]
 layout_mode = 2
 size_flags_vertical = 3
-text = "PLAY"
+texture_normal = SubResource("AtlasTexture_bs46r")
+texture_pressed = SubResource("AtlasTexture_ic3oy")
+texture_hover = SubResource("AtlasTexture_amlif")
 
-[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=1303090913]
+[node name="SettingsButton" type="TextureButton" parent="VBoxContainer" unique_id=137922398]
 layout_mode = 2
 size_flags_vertical = 3
-text = "SETTINGS"
+texture_normal = SubResource("AtlasTexture_wxjlq")
+texture_pressed = SubResource("AtlasTexture_lgxmk")
+texture_hover = SubResource("AtlasTexture_25c13")
 
-[node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1951928655]
+[node name="ExitButton" type="TextureButton" parent="VBoxContainer" unique_id=2021407337]
 layout_mode = 2
 size_flags_vertical = 3
-text = "EXIT"
+texture_normal = SubResource("AtlasTexture_odiyu")
+texture_pressed = SubResource("AtlasTexture_51vel")
+texture_hover = SubResource("AtlasTexture_s4t25")
+
+[node name="PlayPopUp" parent="." unique_id=486507811 instance=ExtResource("4_lgxmk")]
+visible = false
+layout_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

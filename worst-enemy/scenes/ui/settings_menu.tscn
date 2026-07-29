@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://d0iyso2os16ve"]
+
+[ext_resource type="Texture2D" uid="uid://b0wm5ixn1ryb8" path="res://assets/backgrounds/settings_scene.png" id="1_qwcqe"]
+
+[node name="SettingsMenu" type="Control" unique_id=105289528]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1376363926]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_qwcqe")
+expand_mode = 1
+
+[node name="ControlOverlay" type="Control" parent="." unique_id=830090082]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 293.0
+offset_top = 62.0
+offset_right = -293.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Mute" type="CheckButton" parent="ControlOverlay" unique_id=1555106591]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 138.0
+offset_right = 448.0
+offset_bottom = 162.0
+scale = Vector2(1.5, 1.5)
+
+[node name="BGMSlider" type="HSlider" parent="ControlOverlay" unique_id=1402060424]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 186.0
+offset_right = 411.0
+offset_bottom = 202.0
+scale = Vector2(1.5, 1.5)
+
+[node name="SFXSlider" type="HSlider" parent="ControlOverlay" unique_id=451795497]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 234.0
+offset_right = 411.0
+offset_bottom = 250.0
+scale = Vector2(1.5, 1.5)
+
+[node name="FullScreen" type="CheckButton" parent="ControlOverlay" unique_id=2021144200]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 322.0
+offset_right = 448.0
+offset_bottom = 346.0
+scale = Vector2(1.5, 1.5)
+
+[node name="ScreenShake" type="CheckButton" parent="ControlOverlay" unique_id=2021454040]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 370.0
+offset_right = 448.0
+offset_bottom = 394.0
+scale = Vector2(1.5, 1.5)
+
+[node name="AutoPause" type="CheckButton" parent="ControlOverlay" unique_id=230614544]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 466.0
+offset_right = 448.0
+offset_bottom = 490.0
+scale = Vector2(1.5, 1.5)

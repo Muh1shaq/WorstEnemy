@@ -3,8 +3,8 @@ extends Control
 signal new_game_pressed
 signal continue_pressed
 
-@onready var new_game_button: Button = $Frame/VBoxContainer/NewGameButton
-@onready var continue_button: Button = $Frame/VBoxContainer/ContinueButton
+@onready var new_game_button = $Frame/VBoxContainer/NewGameButton
+@onready var continue_button = $Frame/VBoxContainer/ContinueButton
 
 func _ready() -> void:
 	hide() # Sembunyikan pop-up saat awal game berjalan

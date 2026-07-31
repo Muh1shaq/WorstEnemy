@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://c00p3qd8sfafi"]
+
+[ext_resource type="Texture2D" uid="uid://cwn4mt44632ye" path="res://assets/backgrounds/ForeLevel1.png" id="1_7mdy4"]
+[ext_resource type="Texture2D" uid="uid://uav7tmryek04" path="res://scenes/objects/SpikeTrap.png" id="2_1h8dx"]
+[ext_resource type="Script" uid="uid://d21eot01qvn7w" path="res://scripts/objects/trap.gd" id="3_jbic4"]
+[ext_resource type="Texture2D" path="res://scenes/objects/DoorKey.png" id="4_ls0qb"]
+
+[node name="Level1" type="Node2D" unique_id=1349158462]
+
+[node name="Background" type="ParallaxLayer" parent="." unique_id=1381156432]
+motion_scale = Vector2(0.6, 0.6)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=1042236378]
+scale = Vector2(0.86098653, 0.8686327)
+texture = ExtResource("1_7mdy4")
+centered = false
+
+[node name="Environment" type="Node2D" parent="." unique_id=1504474397]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Environment" unique_id=1183105580]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/StaticBody2D" unique_id=640728614]
+polygon = PackedVector2Array(-1, 450, 144, 454, 147, 611, 459, 612, 458, 533, 540, 534, 539, 451, 939, 454, 941, 484, 936, 491, 784, 492, 784, 608, 1104, 611, 1103, 492, 1023, 490, 1022, 452, 1159, 452, 1157, 668, 0, 666)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Environment/StaticBody2D" unique_id=799033199]
+polygon = PackedVector2Array(-1, -1, 1, 116, 53, 117, 65, 108, 66, 82, 65, 71, 219, 73, 225, 36, 376, 23, 377, 105, 383, 114, 455, 112, 459, 185, 481, 188, 494, 212, 536, 214, 540, 231, 613, 235, 621, 168, 699, 161, 702, 1, 864, 1, 864, 1, 866, 24, 941, 23, 942, 102, 993, 149, 1157, 152, 1157, -1)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Environment/StaticBody2D" unique_id=2088170324]
+polygon = PackedVector2Array(61, 238, 65, 232, 375, 233, 379, 236, 379, 295, 374, 303, 302, 304, 301, 343, 296, 349, 290, 360, 233, 360, 223, 351, 213, 362, 155, 361, 138, 339, 138, 314, 61, 315)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Environment/StaticBody2D" unique_id=2083544502]
+polygon = PackedVector2Array(301, 456, 305, 451, 456, 451, 460, 456, 460, 478, 452, 485, 400, 489, 398, 492, 386, 493, 379, 487, 370, 492, 314, 492, 301, 489)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Environment/StaticBody2D" unique_id=1262720211]
+polygon = PackedVector2Array(783, 234, 782, 327, 826, 364, 935, 366, 943, 347, 969, 347, 994, 330, 1014, 341, 1025, 324, 1025, 305, 1096, 304, 1096, 234)
+
+[node name="Traps" type="Node2D" parent="." unique_id=1144111559]
+
+[node name="Spike1" type="Area2D" parent="Traps" unique_id=1464295250]
+position = Vector2(595, 332)
+
+[node name="Sprite2D" type="Sprite2D" parent="Traps/Spike1" unique_id=1913318746]
+position = Vector2(64.99998, 88.000015)
+scale = Vector2(0.4828101, 0.34113187)
+texture = ExtResource("2_1h8dx")
+script = ExtResource("3_jbic4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Traps/Spike1" unique_id=60086489]
+polygon = PackedVector2Array(32, 118, 32, 112, 36, 112, 45, 60, 54, 111, 56, 111, 64, 60, 65, 60, 74, 112, 77, 112, 84, 59, 85, 59, 94, 111, 99, 111, 99, 119)
+
+[node name="Spike2" type="Area2D" parent="Traps" unique_id=1926310246]
+position = Vector2(193, 110)
+
+[node name="Sprite2D" type="Sprite2D" parent="Traps/Spike2" unique_id=588898385]
+position = Vector2(64.99998, 88.000015)
+scale = Vector2(0.4828101, 0.34113187)
+texture = ExtResource("2_1h8dx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Traps/Spike2" unique_id=1828213051]
+polygon = PackedVector2Array(32, 118, 32, 112, 36, 112, 45, 60, 54, 111, 56, 111, 64, 60, 65, 60, 74, 112, 77, 112, 84, 59, 85, 59, 94, 111, 99, 111, 99, 119)
+
+[node name="Spike3" type="Area2D" parent="Traps" unique_id=494767224]
+position = Vector2(832, 112)
+
+[node name="Sprite2D" type="Sprite2D" parent="Traps/Spike3" unique_id=1486661853]
+position = Vector2(64.99998, 88.000015)
+scale = Vector2(0.4828101, 0.34113187)
+texture = ExtResource("2_1h8dx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Traps/Spike3" unique_id=358152776]
+polygon = PackedVector2Array(32, 118, 32, 112, 36, 112, 45, 60, 54, 111, 56, 111, 64, 60, 65, 60, 74, 112, 77, 112, 84, 59, 85, 59, 94, 111, 99, 111, 99, 119)
+
+[node name="Items" type="Node2D" parent="." unique_id=752368853]
+
+[node name="Key1" type="Area2D" parent="Items" unique_id=299390895]
+
+[node name="Sprite2D" type="Sprite2D" parent="Items/Key1" unique_id=1621026324]
+position = Vector2(286, 184)
+texture = ExtResource("4_ls0qb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Items/Key1" unique_id=1210240018]
+
+[node name="Key2" type="Area2D" parent="Items" unique_id=410500920]
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=868136827]
+
+[node name="Door" type="Area2D" parent="." unique_id=327294081]

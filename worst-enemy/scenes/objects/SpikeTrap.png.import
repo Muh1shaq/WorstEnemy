@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbnbnrycaifjj"
-path="res://.godot/imported/ForeGround_Level1.png-98e3990ba35a53afe538ad55ad74a7aa.ctex"
+uid="uid://uav7tmryek04"
+path="res://.godot/imported/SpikeTrap.png-c1ef5e86e67541e2e70b6ff2e6e624ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/backgrounds/ForeGround_Level1.png"
-dest_files=["res://.godot/imported/ForeGround_Level1.png-98e3990ba35a53afe538ad55ad74a7aa.ctex"]
+source_file="res://scenes/objects/SpikeTrap.png"
+dest_files=["res://.godot/imported/SpikeTrap.png-c1ef5e86e67541e2e70b6ff2e6e624ed.ctex"]
 
 [params]
 

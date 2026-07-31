@@ -44,16 +44,17 @@ anchor_left = 0.24700001
 anchor_top = 0.081
 anchor_right = 0.763
 anchor_bottom = 0.89900005
-offset_left = -0.03401184
-offset_top = -0.042999268
-offset_right = -0.18603516
-offset_bottom = 0.102996826
+offset_left = 60.96599
+offset_top = 46.957
+offset_right = -55.186035
+offset_bottom = -38.897003
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="NewGameButton" type="TextureButton" parent="Frame/VBoxContainer" unique_id=945735284]
 layout_mode = 2
-size_flags_vertical = 4
+size_flags_vertical = 3
 
 [node name="ContinueButton" type="TextureButton" parent="Frame/VBoxContainer" unique_id=1395301953]
 layout_mode = 2
+size_flags_vertical = 3

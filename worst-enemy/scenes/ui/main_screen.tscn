@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cbi3hpnfio8se" path="res://assets/backgrounds/MainScreen.png" id="1_pc1m0"]
 [ext_resource type="Texture2D" uid="uid://cho0s1sikrx2e" path="res://assets/sprites/ui/button.png" id="3_wxjlq"]
 [ext_resource type="PackedScene" uid="uid://brotn4obd3jjt" path="res://scenes/ui/play_pop_up.tscn" id="4_lgxmk"]
+[ext_resource type="PackedScene" uid="uid://d0iyso2os16ve" path="res://scenes/ui/settings_menu.tscn" id="5_25c13"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bs46r"]
 atlas = ExtResource("3_wxjlq")
@@ -97,6 +98,10 @@ texture_pressed = SubResource("AtlasTexture_51vel")
 texture_hover = SubResource("AtlasTexture_s4t25")
 
 [node name="PlayPopUp" parent="." unique_id=486507811 instance=ExtResource("4_lgxmk")]
+visible = false
+layout_mode = 1
+
+[node name="SettingsMenu" parent="." unique_id=105289528 instance=ExtResource("5_25c13")]
 visible = false
 layout_mode = 1
 

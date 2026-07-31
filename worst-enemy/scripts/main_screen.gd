@@ -9,6 +9,6 @@ func _on_play_button_pressed() -> void:
 	play_popup.open_popup()
 func _on_start_new_game() -> void:
 	print("Memulai Game Baru...")
-	get_tree().change_scene_to_file("res://scenes/loading_screen.tscn") # Sesuaikan path scene Anda
+	get_tree().change_scene_to_file("res://scenes/ui/level_1.tscn")
 func _on_continue_game() -> void:
 	print("Melanjutkan Game...")

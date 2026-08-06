@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ciuai04op1jfr"]
+
+[ext_resource type="Texture2D" uid="uid://uav7tmryek04" path="res://scenes/objects/SpikeTrap.png" id="1_htn6p"]
+
+[node name="Spike" type="Node2D" unique_id=1961098658]
+
+[node name="Traps" type="Area2D" parent="." unique_id=793176785]
+
+[node name="Sprite2D" type="Sprite2D" parent="Traps" unique_id=1488061400]
+position = Vector2(0.6862335, -28.625004)
+scale = Vector2(0.5850112, 0.3505362)
+texture = ExtResource("1_htn6p")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Traps" unique_id=851371161]
+position = Vector2(0.24195862, -28.749998)
+scale = Vector2(0.60781854, 0.619213)
+polygon = PackedVector2Array(-71, 43, -60, 43, -42, -54, -23, 41, -19, 41, -14.074524, 16.631866, 0, -53, 18, 40, 24, 40, 41, -52, 60, 42, 70, 41, 70, 54, -71, 54)

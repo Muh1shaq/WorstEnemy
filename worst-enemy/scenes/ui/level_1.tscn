@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c63qaqjhpppbw" path="res://assets/backgrounds/LatarLevel1.png" id="1_daqim"]
 [ext_resource type="PackedScene" uid="uid://ciuai04op1jfr" path="res://scenes/objects/spike.tscn" id="2_fd8xv"]
 [ext_resource type="PackedScene" uid="uid://ci61gfcafi46r" path="res://scenes/characters/player.tscn" id="3_daqim"]
+[ext_resource type="AudioStream" uid="uid://dteuck33lgtrr" path="res://assets/audio/oceanframemusic-hidden-hunter-returns-pulse-no-copyright-suspense-music-568863.mp3" id="4_1h8dx"]
 
 [node name="Level1" type="Node2D" unique_id=1349158462]
 
@@ -114,3 +115,7 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Player" parent="." unique_id=1683405980 instance=ExtResource("3_daqim")]
 position = Vector2(65, 517)
+
+[node name="BGM" type="AudioStreamPlayer" parent="." unique_id=1691970341]
+stream = ExtResource("4_1h8dx")
+autoplay = true
